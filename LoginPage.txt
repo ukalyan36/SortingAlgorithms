@@ -1,0 +1,41 @@
+ <div class="container shadow" style="margin-top: 20px; background-color: #fff; border-top: 5px solid #CCC; /*background-image: url(Images/login.png.jpg); */background-position: center; background-repeat: no-repeat;">
+        <div class="row">
+            <div class="col-lg-5  col-lg-offset-4">
+                <div class="panel panel-default loginform" style="margin: 150px 0px;">
+                    <div class="panel-body login-panel-body ">
+                        <div class="login-form">
+                            <h2>User Login</h2>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <asp:TextBox runat="server" ID="txtUserName" CssClass="form-control input-lg" Text="" placeholder="Username" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control input-lg" Text="" placeholder="Password" TextMode="Password" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-check"></i></span>
+                                    <asp:TextBox runat="server" ID="txtAccCode" CssClass="form-control input-lg" Text="" placeholder="Access Code" MaxLength="8" onkeypress="return isNumberKey(event)" />
+                                </div>
+                            </div>
+                            <div class="help-block text-right"><a href="#">Forgot the password ?</a></div>
+                        </div>
+                        <div>
+                            <asp:Label ID="lblMessage" runat="server" ForeColor="Red" Text="" Visible="false"></asp:Label>
+                            <asp:Button ID="btnSigIn" Text="Sign in" CssClass="btn btn-lg btn-danger" runat="server" ValidationGroup="Login" OnClick="btnSigIn_Click" />                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <br>
+            </div>
+            <div></div>
+        </div>
+        <div class="topbar"></div>
+    </div>
